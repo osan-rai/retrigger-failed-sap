@@ -1,0 +1,21 @@
+{
+  "name": "retrigger-failed-sap",
+  "version": "1.0.0",
+  "description": "Script to fetch and retrigger failed SAP XML export audits",
+  "main": "fetchAudit.js",
+  "scripts": {
+    "dev": "node main.js",
+    "main": "node main.js",
+    "start": "node main.js"
+  },
+  "keywords": [
+    "sap",
+    "api",
+    "portpro"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
