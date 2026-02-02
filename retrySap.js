@@ -2,7 +2,7 @@
  * Script to retry failed SAP XML export audits
  */
 
-const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVlYTAzOGVhZGM2YTg2NDYzZWY3MzYiLCJhZG1pbklkIjoiNjk3ODYyZTgyYjVmY2VmMzlmNzA4ZGQ4IiwiaWF0IjoxNzY5NjA1MzQ0LCJleHAiOjE3Njk2MTA3NDR9.t2edGh7pP9puiWEm6ZLuj33KQsIx-P6pVSSO8aYow7M";
+const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVlYTAzOGVhZGM2YTg2NDYzZWY3MzYiLCJhZG1pbklkIjoiNjk3ODYyZTgyYjVmY2VmMzlmNzA4ZGQ4IiwiaWF0IjoxNzcwMDU1NDQwLCJleHAiOjE3NzAwNjA4NDB9.OcdFR434qdpaV4EUisWWgfwJSHxux9cLoyw2ps4If_k"
 
 /**
  * Retry a specific SAP XML export audit

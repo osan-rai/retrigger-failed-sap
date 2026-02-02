@@ -36,9 +36,12 @@ async function main() {
 
     // Step 2: Extract audit IDs (using 'id' field from the response)
     const auditIds = audits.map(audit => audit.id);
-    console.log([auditIds]);
+    console.log(JSON.stringify(auditIds, null, 2));
 
-    // Step 3: Retry the failed audits
+    const invoiceNumbers = audits.map(audit => audit.portpro_invoice_number);
+    console.log(JSON.stringify(invoiceNumbers, null, 2));
+
+    // // Step 3: Retry the failed audits
     console.log('='.repeat(60));
     console.log('🔄 STEP 2: Retrying failed audits...');
     console.log('='.repeat(60));
@@ -46,7 +49,7 @@ async function main() {
 
     const results = await retryMultipleAudits(auditIds, 500);
 
-    // Step 4: Show final summary
+    // // // Step 4: Show final summary
     console.log();
     console.log('='.repeat(60));
     console.log('📊 FINAL SUMMARY');
