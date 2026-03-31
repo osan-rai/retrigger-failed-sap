@@ -10,7 +10,7 @@ const https = require('https');
  */
 async function fetchFailedAudits(limit = 50, offset = 0, startDate = '2026-01-28T00:00:00.000Z', endDate = '2026-01-28T23:59:59.999Z') {
   const baseUrl = 'https://api.medlog.portpro.io/tms/sap-xml-export/audits';
-  const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVlYTAzOGVhZGM2YTg2NDYzZWY3MzYiLCJhZG1pbklkIjoiNjk3ODYyZTgyYjVmY2VmMzlmNzA4ZGQ4IiwiaWF0IjoxNzcwMDU1NDQwLCJleHAiOjE3NzAwNjA4NDB9.OcdFR434qdpaV4EUisWWgfwJSHxux9cLoyw2ps4If_k";
+  const token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODVlYTAzOGVhZGM2YTg2NDYzZWY3MzYiLCJhZG1pbklkIjoiNjk3ODYyZTgyYjVmY2VmMzlmNzA4ZGQ4IiwiaWF0IjoxNzc0OTM4NDAxLCJleHAiOjE3NzQ5NDM4MDF9.5B9tuUD9f7_g1RLj5bgbB00nkum5QzXXBsUxi1AYQAE";
 
   if (!token) {
     throw new Error('BEARER_TOKEN environment variable is not set');
